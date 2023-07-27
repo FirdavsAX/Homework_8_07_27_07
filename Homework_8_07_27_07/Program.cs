@@ -4,12 +4,11 @@
     {
         static void Main(string[] args)
         {
-            string str= "Men bugun avtobusda keldimmikin nima deysiz?";
+            string str= "The Lord of the rings is most famous film  and I like it";
 
             int position = (FindPosition(str));
            str =  FindEventMax(str, position);
             Console.WriteLine(str);
-
         }
         static int FindPosition(string str)
         {
@@ -52,7 +51,7 @@
                     break;
                 }
             }
-            return str.Substring(pos, lengthEvent);
+            return str.Substring(pos+1, lengthEvent);
         }
     }
 }
